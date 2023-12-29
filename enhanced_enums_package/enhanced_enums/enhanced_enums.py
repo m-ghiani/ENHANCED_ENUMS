@@ -1,10 +1,10 @@
 from enum import Enum
-from typing import TypeVar, Generic, Tuple, cast
+from typing import TypeVar, Tuple, cast
 
 T = TypeVar("T", bound="EnhancedEnum")
 
 
-class EnhancedEnum(Enum, Generic[T]):
+class EnhancedEnum(Enum):
     """
     A generic, enhanced enumeration class providing additional convenience methods.
 
@@ -51,7 +51,7 @@ class EnhancedEnum(Enum, Generic[T]):
         print(Color.from_value(1))
         ```
     """
-    def __str__(self: T) -> str:
+    def __str__(self) -> str:
         """
         Return a more user-friendly string representation of the enum member.
 
@@ -63,7 +63,7 @@ class EnhancedEnum(Enum, Generic[T]):
         return self.name
 
     @classmethod
-    def list_all(cls) -> list[T]:
+    def list_all(cls: type[T]) -> list[T]:
         """
         Return a list of all enum members.
 
@@ -88,7 +88,7 @@ class EnhancedEnum(Enum, Generic[T]):
         return value in cls._value2member_map_
 
     @classmethod
-    def as_tuple(cls) -> Tuple[T, ...]:
+    def as_tuple(cls: type[T]) -> Tuple[T, ...]:
         """
         Return the enum members as a tuple.
 
@@ -130,7 +130,7 @@ class EnhancedEnum(Enum, Generic[T]):
         return members[index]
 
     @classmethod
-    def from_string(cls, name: str) -> T:
+    def from_string(cls: type[T], name: str) -> T:
         """
         Return the corresponding enum member for a given name.
 
@@ -149,7 +149,7 @@ class EnhancedEnum(Enum, Generic[T]):
             raise ValueError(f"{name} is not a valid member name")
 
     @classmethod
-    def from_value(cls, value: int) -> T:
+    def from_value(cls: type[T], value: int) -> T:
         """
         Return the corresponding enum member for a given numeric value.
 

@@ -60,7 +60,7 @@ print(Color.from_value(1))
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome. Feel free to check [issues page](#) if you want to contribute.
+Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/m-ghiani/ENHANCED_ENUMS/issues) if you want to contribute.
 
 ## License
 
@@ -68,6 +68,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [your-email@example.com](mailto:your-email@example.com)
+Massimo Ghiani - [m.ghiani@gmail.com](mailto:m.ghiani@gmail.com)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/m-ghiani/ENHANCED_ENUMS](https://github.com/m-ghiani/ENHANCED_ENUMS)

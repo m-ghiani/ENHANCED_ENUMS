@@ -1,0 +1,15 @@
+AUTHOR_NO_EMAIL = "Massimo Ghiani"
+EMAIL = "m.ghiani@gmail.com"
+AUTHOR = f"{AUTHOR_NO_EMAIL} <{EMAIL}>"
+MAINTAINER = "Massimo Ghiani <m.ghiani@gmail.com>"
+STATUS = "Production"
+VERSION = "1.0.1"
+URL = "https://github.com/m-ghiani/ENHANCED_ENUMS"
+ISSUES_URL = "https://github.com/m-ghiani/ENHANCED_ENUMS/issues"
+KEYWORDS = (
+    "enum, enums, enhanced, enhanced enums, enhanced enum, enhanced-enums, enhanced-enum, "
+    "enhancedenums, enhancedenum, enhancedenum, enhanced_enums, enhanced_enum, enhancedenums, "
+    "enhancedenum, enhancedenum, enhanced-enums-package, enhanced-enums-package, "
+    "enhanced_enums_package, enhanced_enums_package, enhanced-enums, enhanced-enums, "
+    "enhanced_enums, enhanced_enums, enhanced, en"
+)
